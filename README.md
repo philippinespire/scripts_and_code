@@ -41,7 +41,7 @@ Open script for more details
 
 R script to calculate, and plot, base pair proportions and mean base pair proportion of DNA fragments position by position
 
-Uses the output of "base_counts.sh", or tsv files with base pair counts from single digest RADseq, paired-End sequencing data, as input.
+Uses the output of "base_calculator.sh", or tsv files with base pair counts from single digest RADseq, paired-End sequencing data, as input.
 
 Open script for more details
 
