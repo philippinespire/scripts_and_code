@@ -8,7 +8,7 @@
 
 # First, prepare an input tab-deliminated file(s) with individuals/files in rows and data as columns. 
 # First column being the file names, then counts of each of the bases (in this order: A,C,G,T,N), position, which end of read, and finally, read direction. 
-# You can use the "base_counts.sh" script in GitHub to do this for you https://github.com/philippinespire/scripts_and_code
+# You can use the "base_calculator.sh" script in GitHub to do this for you https://github.com/philippinespire/scripts_and_code
 
 # Thus, your input file(s) should have 9 columns. Head example file:
 # ```
@@ -67,7 +67,7 @@ Ssp_b_R2   <- Ssp_b_R2  [,c(1:8)]
 #Ssp_b_R2 <- Ssp_b_R2 %>%
 #  filter(frag_end=="sheared_end")
 
-### The "base_counts.sh" script provides important information in the file's name
+### The "base_calculator.sh" script provides important information in the file's name
 # We will use the names to split this information into variable (columns) but first:
 # check if all files have the same name schemes across datasets, i.e. names provide the same info in the same order.
 Ssp_unb_F [1,1]
