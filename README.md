@@ -36,6 +36,7 @@ sbatch base_calculator.sh "F"
 
 Open script for more details
 
+---
 
 ### base_proportions.R
 
