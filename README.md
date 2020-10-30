@@ -55,3 +55,9 @@ Simple script to concatenate files of the same individuals but from multiple seq
 Usage: Open the script can enter your files' read and lane info 
 
 ---
+
+### subsetting_VCF_files.dat
+
+User friendly list of steps and code to succesfully subset VCF files while maintaining functionality
+
+---
