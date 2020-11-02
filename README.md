@@ -62,7 +62,7 @@ User friendly list of steps and code to succesfully subset VCF files while maint
 
 ---
 
-### ssh_config_stay_connected.dat
+### ssh_config_stay_connected.txt
 
 Use this code to maintain a stable ssh connection if your sessions are becoming idle and/or terminated very quickly, after 1-2 min of inactivity.
 
