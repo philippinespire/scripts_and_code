@@ -1,13 +1,12 @@
-My ssh connections were idle and terminated very quickly 1-2 min of inactivity. I tried to fixed this by editing "ssh_config" file in local computer
+My ssh connections were idle and terminated very quickly, after 1-2 min of inactivity. I fixed this by editing "ssh_config" file in local computer
 
 Potential problem: my house internet router, it might be set up for open-and-end connectons. 
 HTML, using internet in the house, I think those activities secured a connection and once successful, it closes.
 Thus, it does not keep connections open to long to save memory???
 
-
 nano /etc/ssh/ssh_config
 
-before:
+before editing my ssh_config read:
 ```
 Host *
         SendEnv LANG LC_*
@@ -17,7 +16,7 @@ permission denied. need sudo to edit.
 
 sudo nano /etc/ssh/ssh_config
 
-# I added these two lines:
+# I then added these two lines:
 
 ```
 Host *
@@ -26,8 +25,7 @@ Host *
         ServerAliveCountMax 2
 ```
 
-
-# ServerAliveInterval 60, is sending a "package" to the remote server, every 60 second. It is checking that the server still there.
-# I set it to 60 seconds (number will always be in seconds). If it still disconnect then you need to dial this number down still the connection is stable 
+# ServerAliveInterval 60, is sending a "package" to the remote server, every 60 second. This is checking that the server still there.
+# I set it to 60 seconds (number will always be in seconds). If it still disconnect then you need to dial this number down still the connection is stable. 
 
 # ServerAliveCountMax 2, is telling ssh, how many times to send the pacakage. This case it will try twice. If doesn't get a response, it will disconnect.
