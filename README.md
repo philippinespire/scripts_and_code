@@ -48,6 +48,22 @@ Open script for more details
 
 ---
 
+### read_calculator.sh
+
+read_caltulator.sh counts the number of reads in compressed (default) or uncompressed FQ files (open script for details).
+
+Usage:  
+1.- Place script in the same directory with FQ files to be processed. 
+Open script and
+2.- Set slurm options according to your system
+3.- Set "User Variables"
+4.- Execute
+```
+sbatch read_calculator.sh
+```
+
+---
+
 ### concat_fqFiles_diffLanes.sh
 
 Simple script to concatenate files of the same individuals but from multiple sequencing lanes
