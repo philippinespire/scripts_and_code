@@ -27,8 +27,11 @@ This script counts the number of each base in DNA fragments from single-digest S
 
 Usage:
 1.- Set slurm options according to your system
+
 2.- Set "User Variables" 
+
 3.- Check that the ls statement in line 69 will list your input files
+
 4.- Execute in command with: sbatch <script name> <"readDir">
 ```
 sbatch base_calculator.sh "F"
@@ -54,9 +57,13 @@ read_caltulator.sh counts the number of reads in compressed (default) or uncompr
 
 Usage:  
 1.- Place script in the same directory with FQ files to be processed. 
+
 Open script and
+
 2.- Set slurm options according to your system
+
 3.- Set "User Variables"
+
 4.- Execute
 ```
 sbatch read_calculator.sh
