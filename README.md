@@ -61,3 +61,9 @@ Usage: Open the script can enter your files' read and lane info
 User friendly list of steps and code to succesfully subset VCF files while maintaining functionality
 
 ---
+
+### ssh_config_stay_connected.dat
+
+Use this code to maintain a stable ssh connection if your sessions are becoming idle and/or terminated very quickly, after 1-2 min of inactivity.
+
+---
