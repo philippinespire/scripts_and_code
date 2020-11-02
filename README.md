@@ -41,7 +41,7 @@ sbatch base_calculator.sh "F"
 ```
 Output:
   
-  * TSV file with file names, base counts, and read information.
+  * TSV table with file names, base counts, and read information.
 
 Open script for more details
 
@@ -75,7 +75,7 @@ sbatch read_calculator.sh
 ```
 Output:
   
-  * CSV file with file names and total number of reads
+  * CSV table with file names and total number of reads
 
 ---
 
