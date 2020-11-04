@@ -33,7 +33,7 @@
 # 2.-Set the "User Variable" bellow to the correct species (3-letter code), protocol (baited or unbaited), read direction (F or R), desired window size (1 if you want every position), and region (starting postion, ending position). 
 # In the example below, the script analyzes every position (i.e. win_size=1) in the entire length of the reads, which in this case was 140 bp (i.e. st_pos=1, en_pos=140) for foward reads and 150 bp for reverse.
 
-# User Variables. Modify this according to your analysis. For readDir=$1, the "$1" means you will provide the direction directly in the command line. Thus, do not modify here.
+# User Variables. Modify these according to your analysis. For readDir=$1, the "$1" means you will provide the direction directly in the command line. Thus, do not modify here.
 sp=Ssp
 protocol=unbaited
 readDir=$1
