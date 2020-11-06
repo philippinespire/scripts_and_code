@@ -2,7 +2,7 @@
 #`20200331_PIRE-Ssp-CGub_052-Capture_CKDL200150313-1a-D712-AK1545_H7T2LBBXX_L7.R1.fq.gz`
 #`20200331_PIRE-Ssp-CGub_052-Capture_CKDL200150313-1a-D712-AK1545_H7T2LBBXX_L8.R1.fq.gz`
 
-# User variables: Match the FILE_DIRECTION
+# User variables: Match the FILE_DIRECTION and set the number of threads according to your system
 
 FILE_DIRECTION=R1
 THREADS=40

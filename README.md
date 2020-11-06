@@ -23,16 +23,25 @@ Open script for more details
 
 ### base_calculator.sh
 
-This script counts the number of each base in DNA fragments from single-digest Sbf1 RADseq, pair-end fq.gz files according to the window size and region determined by user. 
+This script counts the number of each base in DNA fragments from single-digest Sbf1 RADseq, pair-end fq.gz files according to the window size and region determined by user
 
 Usage:
-1.- Set slurm options according to your system
-2.- Set "User Variables" 
-3.- Check that the ls statement in line 69 will list your input files
-4.- Execute in command with: sbatch <script name> <"readDir">
+
+1.- Place script in the same directory with files to be processed. Open script and:
+
+2.- Set slurm options according to your system
+
+3.- Set "User Variables" 
+
+4.- Check that the ls statement in line 69 will list your input files. Modify regex if necessary
+
+5.- Execute in command with: sbatch <script name> <"readDir">
 ```
 sbatch base_calculator.sh "F"
 ```
+Output:
+  
+  * TSV table with file names, base counts, and read information.
 
 Open script for more details
 
@@ -52,15 +61,21 @@ Open script for more details
 
 read_caltulator.sh counts the number of reads in compressed (default) or uncompressed FQ files (open script for details).
 
-Usage:  
-1.- Place script in the same directory with FQ files to be processed. 
-Open script and
+Usage: 
+
+1.- Place script in the same directory with FQ files to be processed. Open script and:
+
 2.- Set slurm options according to your system
+
 3.- Set "User Variables"
+
 4.- Execute
 ```
 sbatch read_calculator.sh
 ```
+Output:
+  
+  * CSV table with file names and total number of reads
 
 ---
 
