@@ -11,7 +11,7 @@ THREADS=40
 
 #Script:
 
-# step 1: list all foward fq.gz files
+# step 1: list all forward fq.gz files
 # ls *$FILE_DIRECTION.fq.gz | 
 
 # step 2: remove file extension from Lane to end, and remove duplicate file basenames
