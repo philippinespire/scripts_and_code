@@ -22,15 +22,15 @@
 # This script counts the number of each base in DNA fragments from fq.gz files according to the window size and region determined by user. 
 # Returns a tab delimitated file (.tsv) listing file names, base counts and read info.
 # The script has been tested in single-digest RADseq, pair-end data, and it is meant to be ran separately for each read direction, forward (F) and reverse (R).
-# The remanning Sbf1 restriction site motif 'TGCAGG' should in theory be present at the beginning of all forward reads ("restrct_end") and absent from the reverse reads ("shearded_end"). 
+# The remanning Sbf1 restriction site motif 'TGCAGG' should in theory be present at the beginning of all forward reads ("restrct_end") and absent from the reverse reads ("sheared_end"). 
 # However, exceptions do occur and cause incorrect position comparisons.
-# base_calculator.sh reports base counts for all, restriction and shearded ends in forward and reverse reads. 
-# The user should eliminate "shearded end" records from forward data and "restrct_end" from reverse data for further analysis.
+# base_calculator.sh reports base counts for all, restriction and sheared ends in forward and reverse reads. 
+# The user should eliminate "sheared end" records from forward data and "restrct_end" from reverse data for further analysis.
 
 #### To run:
 
 # 1. Make sure you have modified the slurm options above according to your system specifications.
-# 2.-Set the "User Variable" bellow to the correct species (3-letter code), protocol (baited or unbaited), read direction (F or R), desired window size (1 if you want every position), and region (starting postion, ending position). 
+# 2.-Set the "User Variable" bellow to the correct species (3-letter code), protocol (baited or unbaited), read direction (F or R), desired window size (1 if you want every position), and region (starting position, ending position). 
 # In the example below, the script analyzes every position (i.e. win_size=1) in the entire length of the reads, which in this case was 140 bp (i.e. st_pos=1, en_pos=140) for foward reads and 150 bp for reverse.
 
 # User Variables. Modify these according to your analysis. For readDir=$1, the "$1" means you will provide the direction directly in the command line. Thus, do not modify here.
@@ -41,7 +41,7 @@ win_size=1
 st_pos=1
 en_pos=150
 
-# 3.- Check that the first "ls" statment in the script below (line 69) will list your input files. As default, it is set to "$1.fq.gz" files, the $1 represents the read direction, which will be entered the command line as "F", "R", "R1", or "R2".  
+# 3.- Check that the first "ls" statement in the script below (line 69) will list your input files. As default, it is set to "$1.fq.gz" files, the $1 represents the read direction, which will be entered the command line as "F", "R", "R1", or "R2".  
 # if you have uncompressed files, delete the ".gz" from the ls statement and the change "zcat" to "cat" inside the parallel statement later in the same line.
 
 # 4.- Save your changes to this script and execute in the command line as:
