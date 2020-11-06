@@ -5,7 +5,7 @@
 #SBATCH --time=144:00:00
 #SBATCH -p main
 #SBATCH -c 4
-#SBATCH --mail-user=e1garcia@odu.edu
+#SBATCH --mail-user=<youremail>
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=END
 
