@@ -11,7 +11,7 @@
 
 
 ############# Multi_FASTQC.sh ###################
-## runs FASTQC and MultiQC reporst in parallel ##
+## runs FASTQC and MultiQC reports in parallel ##
 ##   contact: Eric Garcia, e1garcia@odu.edu    ##
 #################################################
 
@@ -22,7 +22,7 @@
 
 #### Details
 
-# Multi_FASTQC.sh is a simple sbatch script that runs FASTQC and MultiQC reporst in parallel with a single command 
+# Multi_FASTQC.sh is a simple sbatch script that runs FASTQC and MultiQC reports in parallel with a single command 
 # Results will be directed to a newly created sub-directory called Multi_FASTQC 
 # For FASQC options use <fasqc --help> or visit  https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 # For MultiQC options use <multiqc --help> or visit  https://multiqc.info/
@@ -40,7 +40,7 @@
 # in the command line, type "sbatch", the name of the script <Multi_FASTQC.sh>, and the suffix identifying the files to be analyzed in quotations. The last can be file extensions or any other shared file identifier at the end of the files' names
 # example: <sbatch Multi_FASTQC.sh ".fq.gz">
 
-# Alternatly, the suffix can be replaced by any regex expression that correctly identifies the files to be processed.
+# Alternately, the suffix can be replaced by any regex expression that correctly identifies the files to be processed.
 # If such regex does not occur at the end of file names, you'll need to remove the wild card " * " in the first fastqc statement in line 50
 
 # Multi_FASTQC.sh has been tested in "fq", "fq.gz" and "bam" files.
