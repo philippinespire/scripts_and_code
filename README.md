@@ -87,7 +87,7 @@ Usage:
 
 1.- Place script in the same directory with files to be processed. Open script and:
 
-2. - Set file and read info as well as the maximum length (bp) of motifs to be counted.
+2.- Set file and read info as well as the maximum length (bp) of motifs to be counted.
 
 
 `motif_calculator.sh` will then lists and reports frequencies of all motifs within the size range of "position 1", or the first bp, to the specified maximum length (from beginning  of reads only).
@@ -95,13 +95,9 @@ Usage:
 User variables options:
 
 FILE_DIRECTION ("forward" or "reverse") 
-
 DIRECTION_SUFFIX ("F","R","R1","R2", etc)  
-
 FILE_EXTENSION ("fq" or "fq.gz" for uncompressed and compressed files, respectively) 
-
 MAX_motif_length (digit)(maximum motif size (in bp) to search for repeats)
-
 THREADS (number of threads according to your system)
 
 
