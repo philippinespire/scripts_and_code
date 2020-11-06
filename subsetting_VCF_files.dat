@@ -1,11 +1,11 @@
 Depending on your analysis, you might need to subset VCF files.
 
-Some dDocent filters apply thresholds to all files together (Albatross and Contemporary). Since Contemporary files had substancial more data, much of the Albatross contigs were been excluded.
+Some dDocent filters apply thresholds to all files together (Albatross and Contemporary). Since Contemporary files had substantial more data, much of the Albatross contigs were been excluded.
 Thus, we created separate Albatross and Contemporary subsets from the same VCF to analyzed on these separately.
 
 VCF files begin with a header and contain site info in rows and individual as columns.
 
-Subseting TotalRawSNPs.5.5.vcf into Albatross-only and Contemporary-only:
+Subsetting TotalRawSNPs.5.5.vcf into Albatross-only and Contemporary-only:
 
 1. Make a file with the header
 grep '^##' TotalRawSNPs.5.5.vcf > header.vcf
