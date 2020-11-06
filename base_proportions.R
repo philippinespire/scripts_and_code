@@ -6,7 +6,7 @@
 ### Contact: Eric Garcia, e1garcia@odu.edu  <º)))><
 ### This script is optimized to calculate base pair proportions, position by position, of DNA fragments coming from single digest RADseq, paired-End sequencing data.
 
-# First, prepare an input tab-deliminated file(s) with individuals/files in rows and data as columns. 
+# First, prepare an input tab-delimited file(s) with individuals/files in rows and data as columns. 
 # First column being the file names, then counts of each of the bases (in this order: A,C,G,T,N), position, which end of read, and finally, read direction. 
 # You can use the "base_calculator.sh" script in GitHub to do this for you https://github.com/philippinespire/scripts_and_code
 
