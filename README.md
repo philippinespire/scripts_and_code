@@ -85,7 +85,12 @@ motif_calculator.sh identifies and counts repeated motifs in compressed or uncom
 
 Usage:
 
-Users set file and read info as well as the maximum length (bp) of motifs to be counted and the calculator lists and reports frequencies of all motifs within the size range of "position 1", or the first bp, to the specified maximum length (from beginning  of reads only).
+1.- Place script in the same directory with files to be processed. Open script and:
+
+2. - Set file and read info as well as the maximum length (bp) of motifs to be counted.
+
+
+motif_calculator.sh will then lists and reports frequencies of all motifs within the size range of "position 1", or the first bp, to the specified maximum length (from beginning  of reads only).
 
 User variables options:
 
