@@ -88,11 +88,17 @@ Usage:
 Users set file and read info as well as the maximum length (bp) of motifs to be counted and the calculator lists and reports frequencies of all motifs within the size range of "position 1", or the first bp, to the specified maximum length (from beginning  of reads only).
 
 User variables options:
+
 FILE_DIRECTION ("forward" or "reverse") 
+
 DIRECTION_SUFFIX ("F","R","R1","R2", etc)  
+
 FILE_EXTENSION ("fq" or "fq.gz" for uncompressed and compressed files, respectively) 
+
 MAX_motif_length (digit)(maximum motif size (in bp) to search for repeats)
+
 THREADS (number of threads according to your system)
+
 
 Open script for details
 
