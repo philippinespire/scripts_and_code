@@ -119,7 +119,7 @@ Usage:
 
 2.- Set file and read info, maximum length (bp) of motifs to be counted, and output base name.
 
-3.- Once the motif frequencies are printed in the terminal, enter the the desired motif length to based the read removal.
+3.- Execute and once the motif frequencies are printed in the terminal, enter the the desired motif length to base the read removal.
 
 Output:
 
