@@ -95,10 +95,35 @@ Usage:
 User variables options:
 
 FILE_DIRECTION ("forward" or "reverse") 
+
 DIRECTION_SUFFIX ("F","R","R1","R2", etc)  
+
 FILE_EXTENSION ("fq" or "fq.gz" for uncompressed and compressed files, respectively) 
+
 MAX_motif_length (digit)(maximum motif size (in bp) to search for repeats)
+
 THREADS (number of threads according to your system)
+
+
+Open script for details
+
+---
+
+### fq_repeat_cleaner.sh
+
+`fq_repeat_cleaner.sh` removes sequences with repeated motifs at the beginning of the read in compressed or uncompressed FQ files
+
+Usage:
+
+1.- Place script in the same directory with files to be processed. Open script and:
+
+2.- Set file and read info, maximum length (bp) of motifs to be counted, and output base name.
+
+3.- Once the motif frequencies are printed in the terminal, enter the the desired motif length to based the read removal.
+
+Output:
+
+One single concatenated FQ file (from all input files) with all reads for which the starting motif of predetermined length does not repeat in any other reads
 
 
 Open script for details
