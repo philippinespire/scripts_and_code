@@ -81,7 +81,7 @@ seq 1 $MAX_MOTIF_length | \
 		> {}_bp.$DIRECTION_SUFFIX.Motifs_never_repeated"
 
 # Create summary for repeated motifs
-echo -e "file\ttotal_nReads\tmofit_lengh(bp)" > header.motif 
+echo -e "motif_file\tnReads_with_motifs\tmofit_length(bp)" > header.motif 
 ls *bp.$DIRECTION_SUFFIX.Motifs_inmultiple_Reads | sort -g | parallel --no-notice -k "echo -n {}',' && cut -f1 {} | paste -sd+ | bc" | sed 's/,/\t/g' > body.motif1  &&
 ls *bp.$DIRECTION_SUFFIX.Motifs_inmultiple_Reads | sort -g | sed 's/_.*//' > body.motif2 &&
 cat header.motif <(\
