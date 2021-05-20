@@ -149,3 +149,9 @@ User friendly list of steps and code to successfully subset VCF files while main
 Use this code to maintain a stable ssh connection if your sessions are becoming idle and/or terminated very quickly, after 1-2 min of inactivity.
 
 ---
+
+### mapDamage_tutorial.md
+
+Instruction on how to run mapDamage on Wahab ODU's cluster. See file for details
+
+---
