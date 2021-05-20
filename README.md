@@ -152,6 +152,6 @@ Use this code to maintain a stable ssh connection if your sessions are becoming 
 
 ### mapDamage_tutorial.md
 
-Instruction on how to run mapDamage on Wahab ODU's cluster. See file for details
+Instructions on how to run mapDamage on Wahab ODU's cluster. See file for details
 
 ---
