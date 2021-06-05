@@ -153,3 +153,28 @@ Warning messages:
 Successful run
 
 ```
+
+## Updated SLURM Script by CBIRD
+
+name: runMAPDMG.sbatch
+example: `sbatch runMAPDMG.sbatch *NoWGA_???-A*RG.bam ref.fasta`
+```
+#!/bin/bash -l
+
+#SBATCH --job-name=mpdmg
+#SBATCH -o mapDamage-%j.out
+#SBATCH -p main
+#SBATCH -c 32
+
+enable_lmod
+module load container_env mapdamage2
+module load parallel
+
+PATTERN=$1
+REF=$2
+
+echo FILES=$PATTERN
+echo REF=$REF
+
+ls $PATTERN | parallel --no-notice -j 32 "crun mapDamage -i {} -r $REF"
+```
