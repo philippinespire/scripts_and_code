@@ -158,7 +158,7 @@ Successful run
 
 name: runMAPDMG.sbatch
 
-example: `sbatch runMAPDMG.sbatch *NoWGA_???-A*RG.bam ref.fasta`
+example: `sbatch runMAPDMG.sbatch "*NoWGA_???-A*RG.bam" ref.fasta`
 
 ```bash
 #!/bin/bash -l
