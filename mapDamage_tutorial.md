@@ -98,13 +98,14 @@ I then created a sbatch script, mapDamage_loop.sh, to run all albatross files in
 #SBATCH --job-name=mapDamage
 #SBATCH -o mapDamage-%j.out
 #SBATCH -p main
-#SBATCH -c 4
+#SBATCH -c 40
 #SBATCH --mail-user=youremail
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=END
 
 enable_lmod
 module load container_env mapdamage2
+module load paralle
 
 ls ../../PIRE2019-Ssp-A*bam | parallel --no-notice -kj40 "crun mapDamage -i{} -r ../../reference.5.5.fasta"
 
